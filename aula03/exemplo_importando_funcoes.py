@@ -21,3 +21,6 @@ while True:
             break
         case _:
             print(f'Opção inválida!')
+
+
+#Fim
