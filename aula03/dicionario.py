@@ -11,6 +11,9 @@ aluno = {
 print(professor['nome'])
 print(professor['idade'])
 
+professor['nome'] = 'Messias Batista'
+print(professor)
+
 print(aluno['nome'])
 print(aluno['idade'])
 
@@ -28,4 +31,16 @@ professores = {
         'disciplinas': ['BD I', 'BD II']}
 }
 
-print(professores)
+# print(professores)
+
+print(f'O professor Messias tem {professores["Messias"]["idade"]}'
+      f' anos, e ministra as disciplinas'
+      f' de: {professores["Messias"]["disciplinas"][0]} e {professores["Messias"]["disciplinas"][1]}.')
+
+professores['Messias']['email'] = 'mrafaelbatista@gmail.com'
+professores['Messias']['cpf'] = '000.000.000-00'
+
+print(professores['Messias'])
+
+del professores['Messias']['cpf']
+print(professores['Messias'])
